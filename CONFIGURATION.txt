@@ -1,0 +1,85 @@
+Guía de configuración para la plantilla de servicios locales
+
+1. Archivo principal: index.html
+
+   - Título del sitio
+     Reemplaza el texto dentro de la etiqueta <title>:
+     <title><!-- REEMPLAZAR: Título del sitio para el nuevo negocio -->Nombre del Negocio</title>
+
+   - Logo y nombre del negocio
+     Cambia la imagen en:
+     <img src="Media/logoCircular.jpg" alt="Logo del Negocio">
+     Cambia el texto:
+     <span class="logo-text">Nombre del Negocio</span>
+
+   - Texto del hero
+     Ajusta:
+     - Subtítulo: "Servicios Locales Premium"
+     - Título principal: "Transforma tu experiencia en cada visita"
+     - Descripción del hero: marketing genérico para negocios de barbería, spa, estética o consultorio
+     - Imagen destacada: actualiza la ruta de la imagen de hero
+
+   - Sección Servicios
+     Cada tarjeta de servicio está contenida dentro de un bloque <div class="service-card">.
+     Para añadir un servicio, duplica un bloque completo de card.
+     Para eliminar un servicio, borra el bloque completo desde <div class="service-card"> hasta </div>.
+     Cambia el icono, título, descripción y precio según el servicio.
+
+   - Sección Reseñas
+     Cada testimonio está dentro de un bloque <div class="review-card">.
+     Para añadir más reseñas, duplica un bloque completo.
+     Para eliminar una reseña, borra el bloque completo desde <div class="review-card"> hasta </div>.
+     Cambia el nombre del cliente, el texto y la fuente (por ejemplo, Google Maps).
+
+   - Sección Galería
+     Cada imagen está dentro de un bloque <div class="gallery-item">.
+     Para añadir otra imagen, duplica uno de estos bloques.
+     Para eliminar una imagen, borra el bloque correspondiente.
+     Actualiza las rutas de las imágenes y el texto en <span>Servicio Destacado</span>.
+
+   - Sección Reserva / Calendly
+     El iframe se mantiene intacto. Solo sustituye la URL en el atributo src.
+     Busca el comentario:
+     <!-- REEMPLAZAR SRC: Actualice esta URL de Calendly para el nuevo cliente. Mantenga el bloque iframe intacto. -->
+     Ejemplo de actualización:
+     <iframe src="https://calendly.com/usuario/nombre-del-evento?..." title="Reservar turno - Nombre del Negocio"></iframe>
+
+   - Footer y datos de contacto
+     Cambia:
+     - Ruta del logo del footer: Media/logoCircular.jpg
+     - Texto descriptivo del negocio
+     - Enlace y nombre de Instagram
+     - Número de teléfono en el enlace tel:
+       <a href="tel:+1234567890"> +1 234 567 890</a>
+     - Enlace de ubicación en Google Maps y texto de dirección
+     - Texto de copyright y año
+
+2. Archivo de estilos: CSS/styles.css
+
+   - Variables principales
+     Están definidas en :root al comienzo del archivo.
+     Cambia los valores de color según la marca del cliente.
+     Variables disponibles:
+       --fondo-claro: color de fondo general
+       --fondo-secundario: fondos secundarios y tarjetas suaves
+       --color-principal: botones, acentos y enlaces activos
+       --color-acento: efectos hover y detalles secundarios
+       --texto-oscuro: texto principal
+       --texto-secundario: texto secundario y descripciones
+       --blanco: blanco neutro para fondos y secciones claras
+
+   - Uso de variables
+     Estas variables controlan todo el esquema de color del sitio.
+     Para cambiar el tono general, edita los valores hexadecimales en :root.
+
+3. Notas de edición rápida
+
+   - Para mantener el diseño intacto, evita modificar la estructura HTML de las secciones principales.
+   - Si solo deseas cambiar contenido, edita textos internos, atributos alt y rutas de imagen.
+   - Si necesitas agregar una nueva sección similar, copia uno de los bloques existentes y conserva la misma clase.
+
+4. Consejos de despliegue
+
+   - Asegúrate de subir las imágenes usadas en la carpeta Media.
+   - Verifica que las rutas de las imágenes sean correctas desde el archivo index.html.
+   - Revisa el iframe de Calendly en el navegador después de actualizar la URL para confirmar que carga correctamente.

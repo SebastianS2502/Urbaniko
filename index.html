@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puissante Beauty Salon</title>
+    <title>URBÁNIKO | Arte y Ritual para su Imagen</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-playfair-display@4.5.11/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-montserrat@4.5.14/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-inter@4.5.11/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -15,15 +15,19 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <div class="logo-circle"><img src="Media/logoCircular.jpg" alt="Puissante Beauty Salon"></div>
-                <span class="logo-text">Puissante</span>
+                <!-- REEMPLAZAR: ruta del logo del cliente -->
+                <div class="logo-circle"><img src="Media/logoCircular.jpg" alt="Logo de Urbaniko"></div>
+                <div>
+                    <span class="logo-text">URBÁNIKO</span>
+                    <span class="logo-subtitle">1995 · 2025</span>
+                </div>
             </a>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#resenas">Reseñas</a></li>
                 <li><a href="#galeria">Galería</a></li>
-                <li><a href="#reserva" class="nav-btn">Reservar</a></li>
+                <li><a href="#reserva" class="nav-btn">Agenda tu cita</a></li>
             </ul>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
@@ -44,7 +48,7 @@
             <li><a href="#servicios" onclick="toggleMenu()">Servicios</a></li>
             <li><a href="#resenas" onclick="toggleMenu()">Reseñas</a></li>
             <li><a href="#galeria" onclick="toggleMenu()">Galería</a></li>
-            <li><a href="#reserva" onclick="toggleMenu()">Reservar Turno</a></li>
+            <li><a href="#reserva" onclick="toggleMenu()">Agenda tu cita</a></li>
         </ul>
     </div>
 
@@ -52,16 +56,17 @@
     <section class="hero" id="inicio">
         <div class="hero-container">
             <div class="hero-content">
-                <p class="hero-subtitle">Beauty Salon & Spa</p>
-                <h1 class="hero-title">Tu Belleza, <span>Nuestra Pasión</span></h1>
-                <p class="hero-desc">En Puissante Beauty Salon transformamos tu estilo con tratamientos exclusivos, productos premium y un equipo de estilistas expertos dedicados a realzar tu belleza natural.</p>
+                <p class="hero-subtitle">30 años transformando estilos en la Cr 103D N°83-69</p>
+                <h1 class="hero-title">Arte y Ritual para <span>tu Imagen</span></h1>
+                <p class="hero-desc">30 años transformando estilos en la Cr 103D N°83-69. Peluquería, barbería y galería de arte en un solo lugar.</p>
                 <div class="hero-buttons">
-                    <a href="#reserva" class="btn-primary">Reservar Turno</a>
-                    <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+                    <a href="#reserva" class="btn-primary">Agenda tu cita</a>
+                    <a href="#servicios" class="btn-secondary">Ver servicios</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="Media/logoCircular.jpg" alt="Puissante Beauty Salon">
+                <!-- REEMPLAZAR: ruta de imagen destacada del cliente -->
+                <img src="Media/logoCircular.jpg" alt="Imagen destacada del servicio">
             </div>
         </div>
     </section>
@@ -70,46 +75,39 @@
     <section class="services" id="servicios">
         <div class="section-header">
             <p class="section-subtitle">Nuestros Servicios</p>
-            <h2 class="section-title">Tratamientos Exclusivos</h2>
-            <p class="section-desc">Descubre nuestra amplia gama de servicios diseñados para realzar tu belleza y bienestar.</p>
+            <h2 class="section-title">Rituales de imagen con enfoque artístico</h2>
+            <p class="section-desc">Cortes, color, barbería y tratamientos premium pensados para un estilo único.</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon"><i class="fas fa-cut"></i></div>
-                <h3>Corte & Estilo</h3>
-                <p>Cortes personalizados que realzan tu rostro y reflejan tu personalidad única.</p>
-                <div class="service-price">Desde $25.000</div>
+                <h3>✂️ Corte & Diseño</h3>
+                <p>Cortes personalizados, degradados y diseños artísticos.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon"><i class="fas fa-palette"></i></div>
-                <h3>Coloración</h3>
-                <p>Técnicas avanzadas de color, mechas, balayage y tratamientos capilares premium.</p>
-                <div class="service-price">Desde $60.000</div>
+                <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3>🎨 Color & Mechas</h3>
+                <p>Balayage, peekaboo, coloración creativa con productos Alfaparf.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-beard"></i></div>
+                <h3>💈 Barbería</h3>
+                <p>Barba, perfilado y rituales de cuidado masculino.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon"><i class="fas fa-spa"></i></div>
                 <h3>Tratamientos</h3>
-                <p>Hidratación profunda, keratina y tratamientos reparadores para cabello saludable.</p>
-                <div class="service-price">Desde $40.000</div>
+                <p>Hidratación, keratina y rituales capilares premium.</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
-                <h3>Manicure & Pedicure</h3>
-                <p>Cuidado completo de manos y pies con esmaltados tradicionales y semipermanentes.</p>
-                <div class="service-price">Desde $20.000</div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-eye"></i></div>
-                <h3>Cejas & Pestañas</h3>
-                <p>Diseño de cejas, lifting de pestañas y extensiones para una mirada impactante.</p>
-                <div class="service-price">Desde $15.000</div>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-magic"></i></div>
-                <h3>Maquillaje</h3>
-                <p>Maquillaje profesional para eventos, novias y ocasiones especiales.</p>
-                <div class="service-price">Desde $45.000</div>
-            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="sobre-nosotros">
+        <div class="section-header">
+            <p class="section-subtitle">Historia y propuesta</p>
+            <h2 class="section-title">Desde 1995, más que una peluquería</h2>
+            <p class="section-desc">Urbaniko nació como un espacio donde el arte y el cuidado personal se encuentran. Somos una galería de arte viva, donde cada cliente es un lienzo y cada visita, un ritual.</p>
         </div>
     </section>
 
@@ -117,10 +115,11 @@
     <section class="reviews" id="resenas">
         <div class="section-header">
             <p class="section-subtitle">Reseñas</p>
-            <h2 class="section-title">Opiniones desde Google Maps</h2>
-            <p class="section-desc">Testimonios reales de clientas satisfechas en Puissante Beauty Salon.</p>
+            <h2 class="section-title">Opiniones de Clientes</h2>
+            <p class="section-desc">Valoraciones reales que destacan servicio, confort y resultados profesionales.</p>
         </div>
         <div class="reviews-grid">
+            <!-- Reseña: duplicar este bloque completo para añadir otra opinión -->
             <div class="review-card">
                 <div class="review-stars">
                     <i class="fas fa-star"></i>
@@ -129,10 +128,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h3>Lina Aguilera Vélez</h3>
-                <p>Muy buena atención, especialmente de Rafa.</p>
+                <h3>Danna</h3>
+                <p>Como siempre, todo perfecto e impecable con una recarga de arte para los sentidos.</p>
                 <span>Google Maps</span>
             </div>
+            <!-- Reseña: duplicar este bloque completo para añadir otra opinión -->
             <div class="review-card">
                 <div class="review-stars">
                     <i class="fas fa-star"></i>
@@ -141,10 +141,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h3>Eliana Mendoza</h3>
-                <p>Las mejores manos y excelente atención.</p>
+                <h3>Yenny cifuentes</h3>
+                <p>AMe gusta este lugar para hacernos corte de cabello.</p>
                 <span>Google Maps</span>
             </div>
+            <!-- Reseña: duplicar este bloque completo para añadir otra opinión -->
             <div class="review-card">
                 <div class="review-stars">
                     <i class="fas fa-star"></i>
@@ -153,8 +154,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h3>Melanie Paola Bautista Valero</h3>
-                <p>Me encanta este lugar, siempre salgo contenta.</p>
+                <h3>Christian Camilo Pedraza</h3>
+                <p>Buen servicio, pero toca sacar turno</p>
                 <span>Google Maps</span>
             </div>
         </div>
@@ -165,32 +166,38 @@
         <div class="section-header">
             <p class="section-subtitle">Nuestro Trabajo</p>
             <h2 class="section-title">Galería de Estilo</h2>
-            <p class="section-desc">Inspiración y resultados que hablan por sí solos.</p>
+            <p class="section-desc">Inspiración visual para distintos servicios locales, desde cortes hasta tratamientos premium.</p>
         </div>
         <div class="gallery-grid">
+            <!-- Galería: duplicar este bloque completo para añadir otra imagen -->
             <div class="gallery-item">
-                <img src="Media/muestra2.png" alt="Estilo 1">
-                <div class="gallery-overlay"><span>Balayage Rubio</span></div>
+                <img src="Media/muestra2.png" alt="Imagen de servicio 1">
+                <div class="gallery-overlay"><span>Servicio Destacado</span></div>
             </div>
+            <!-- Galería: duplicar este bloque completo para añadir otra imagen -->
             <div class="gallery-item">
-                <img src="Media/muestra3.png" alt="Estilo 2">
-                <div class="gallery-overlay"><span>Corte Moderno</span></div>
+                <img src="Media/muestra3.png" alt="Imagen de servicio 2">
+                <div class="gallery-overlay"><span>Servicio Destacado</span></div>
             </div>
+            <!-- Galería: duplicar este bloque completo para añadir otra imagen -->
             <div class="gallery-item">
-                <img src="Media/muestra4.png" alt="Estilo 3">
-                <div class="gallery-overlay"><span>Color Vibrante</span></div>
+                <img src="Media/muestra4.png" alt="Imagen de servicio 3">
+                <div class="gallery-overlay"><span>Servicio Destacado</span></div>
             </div>
+            <!-- Galería: duplicar este bloque completo para añadir otra imagen -->
             <div class="gallery-item">
-                <img src="Media/muestra5.png" alt="Estilo 4">
-                <div class="gallery-overlay"><span>Peinado Elegante</span></div>
+                <img src="Media/muestra5.png" alt="Imagen de servicio 4">
+                <div class="gallery-overlay"><span>Servicio Destacado</span></div>
             </div>
+            <!-- Galería: duplicar este bloque completo para añadir otra imagen -->
             <div class="gallery-item">
-                <img src="Media/muestra6.png" alt="Estilo 5">
-                <div class="gallery-overlay"><span>Manicure Premium</span></div>
+                <img src="Media/muestra6.png" alt="Imagen de servicio 5">
+                <div class="gallery-overlay"><span>Servicio Destacado</span></div>
             </div>
+            <!-- Galería: duplicar este bloque completo para añadir otra imagen -->
             <div class="gallery-item">
-                <img src="Media/muestra1.jpg" alt="Estilo 6">
-                <div class="gallery-overlay"><span>Maquillaje Profesional</span></div>
+                <img src="Media/muestra1.jpg" alt="Imagen de servicio 6">
+                <div class="gallery-overlay"><span>Servicio Destacado</span></div>
             </div>
         </div>
     </section>
@@ -203,9 +210,10 @@
             <p class="section-desc">Selecciona el día y horario que mejor se adapte a ti. ¡Te esperamos!</p>
         </div>
         <div class="calendly-container">
+            <!-- REEMPLAZAR SRC: Actualice esta URL de Calendly para el nuevo cliente. Mantenga el bloque iframe intacto. -->
             <iframe 
                 src="https://calendly.com/suarezdeviajuansebastian/reserva-tu-turno-puissante-beauty-salon?background_color=faf6f0&text_color=3a2e26&primary_color=c9a87c" 
-                title="Reservar turno - Puissante Beauty Salon">
+                title="Reservar turno - URBÁNIKO">
             </iframe>
         </div>
     </section>
@@ -214,23 +222,26 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
-                <div class="logo-circle"><img src="Media/logoCircular.jpg" alt="Puissante Beauty Salon"></div>
-                <p>Puissante Beauty Salon - Usaquén, Bogotá. Belleza profesional con atención personalizada.</p>
+                <!-- REEMPLAZAR: ruta del logo del cliente -->
+                <div class="logo-circle"><img src="Media/logoCircular.jpg" alt="Logo de Urbaniko"></div>
+                <p>URBÁNIKO — Arte y Ritual para su Imagen.</p>
                 <div class="footer-social">
-                    <a href="https://www.instagram.com/puissantebeautysalon/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/urbanikooficial/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/urbaniko" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
             <div class="footer-col">
                 <h4>Contacto</h4>
                 <ul>
-                    <li><a href="https://www.instagram.com/puissantebeautysalon/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> @puissantebeautysalon</a></li>
-                    <li><a href="tel:+573154011584"><i class="fas fa-phone"></i> 3154011584</a></li>
-                    <li><a href="https://www.google.com/maps/search/Cl.+106+%2314+29,+Usaqu%C3%A9n,+Bogot%C3%A1,+Cundinamarca" target="_blank" rel="noreferrer"><i class="fas fa-map-marker-alt"></i> Cl. 106 #14 29, Usaquén, Bogotá</a></li>
+                    <li><a href="https://www.google.com/maps/search/Cr+103D+N%C2%B083-69" target="_blank" rel="noreferrer"><i class="fas fa-map-marker-alt"></i> Cr 103D N°83-69</a></li>
+                    <li><a href="https://wa.me/+573138805761" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> +57 313 880 5761</a></li>
+                    <li><a href="https://www.instagram.com/urbanikooficial/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> @urbanikooficial</a></li>
+                    <li><a href="https://www.facebook.com/urbaniko" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i> @urbaniko</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Puissante Beauty Salon. Todos los derechos reservados.</p>
+            <p>© 2025 Urbaniko. Arte y Ritual para su Imagen.</p>
         </div>
     </footer>
 
