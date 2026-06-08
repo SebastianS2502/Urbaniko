@@ -291,7 +291,7 @@ h1, h2, h3, h4 {
     width: 50%;
     max-width: 500px;
     border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(58, 46, 38, 0.15);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .hero-badge {
@@ -301,7 +301,7 @@ h1, h2, h3, h4 {
     background: var(--blanco);
     padding: 20px 25px;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(58, 46, 38, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     gap: 15px;
@@ -439,7 +439,7 @@ h1, h2, h3, h4 {
 .about-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(58, 46, 38, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-stats {
@@ -449,7 +449,7 @@ h1, h2, h3, h4 {
     background: var(--blanco);
     padding: 25px 30px;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(58, 46, 38, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .about-stats h3 {
@@ -523,7 +523,7 @@ h1, h2, h3, h4 {
     background: var(--blanco);
     border-radius: 25px;
     padding: 35px 30px;
-    box-shadow: 0 20px 40px rgba(58, 46, 38, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -597,7 +597,7 @@ h1, h2, h3, h4 {
 .gallery-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(58, 46, 38, 0.7), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     display: flex;
     align-items: flex-end;
     padding: 20px;
