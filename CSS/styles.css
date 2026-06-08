@@ -46,12 +46,12 @@ h1, h2, h3, h4 {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(250, 246, 240, 0.95);
+    background: rgba(13, 13, 13, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 15px 0;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 20px rgba(58, 46, 38, 0.05);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -95,7 +95,7 @@ h1, h2, h3, h4 {
 .logo-text {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
-    color: var(--texto-oscuro);
+    color: #F5F2ED;
     letter-spacing: 1px;
 }
 
@@ -108,7 +108,7 @@ h1, h2, h3, h4 {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--texto-oscuro);
+    color: #F5F2ED;
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -138,7 +138,7 @@ h1, h2, h3, h4 {
 
 .nav-btn {
     background: var(--color-principal);
-    color: var(--blanco) !important;
+    color: #0D0D0D !important;
     padding: 10px 22px;
     border-radius: 30px;
     transition: all 0.3s !important;
@@ -262,7 +262,7 @@ h1, h2, h3, h4 {
 
 .btn-secondary {
     background: transparent;
-    color: var(--texto-oscuro);
+    color: #F5F2ED;
     padding: 15px 35px;
     border: 2px solid var(--color-principal);
     border-radius: 30px;
