@@ -8,20 +8,20 @@
 :root {
   --color-principal: #E8943A;
   --color-acento: #2AB8A8;
-  --fondo-claro: #F5F2ED;
-  --fondo-oscuro: #0D0D0D;
+  --fondo-claro: #1a1a1a;
+  --fondo-oscuro: #0d0d0d;
   --texto-sobre-oscuro: #F5F2ED;
-  --texto-sobre-claro: #0D0D0D;
+  --texto-sobre-claro: #F5F2ED;
   --gradiente-marca: linear-gradient(135deg, #E8943A 0%, #2AB8A8 100%);
-  --sombra-suave: 0 4px 20px rgba(13, 13, 13, 0.15);
+  --sombra-suave: 0 4px 20px rgba(0, 0, 0, 0.5);
   --radio-borde: 12px;
   --fuente-titulos: 'Playfair Display', serif;
   --fuente-cuerpo: 'Inter', sans-serif;
   /* compatibilidad con variables usadas por la plantilla original */
-  --blanco: var(--fondo-claro);
-  --texto-oscuro: var(--texto-sobre-claro);
-  --texto-secundario: rgba(13, 13, 13, 0.7);
-  --fondo-secundario: rgba(245, 242, 237, 0.85);
+  --blanco: #1a1a1a;
+  --texto-oscuro: #F5F2ED;
+  --texto-secundario: rgba(245, 242, 237, 0.7);
+  --fondo-secundario: rgba(26, 26, 26, 0.85);
 }
 
 html {
